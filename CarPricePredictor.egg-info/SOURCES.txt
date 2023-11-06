@@ -5,6 +5,8 @@ CarPricePredictor.egg-info/dependency_links.txt
 CarPricePredictor.egg-info/requires.txt
 CarPricePredictor.egg-info/top_level.txt
 src/__init__.py
+src/exception.py
+src/logger.py
 src/utils.py
 src/pipelines/__init__.py
 src/pipelines/prediction_pipeline.py

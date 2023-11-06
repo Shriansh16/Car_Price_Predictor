@@ -200,7 +200,8 @@ class UnixCCompiler(CCompiler):
 
                 if sys.platform == 'darwin':
                     linker = _osx_support.compiler_fixup(linker, ld_args)
-                    ld_args = ['-arch', 'x86_64'] + ld_args
+                    from distutils.util import get_host_platform
+                    ld_args = ['-arch', get_host_platform().split("-")[-1]] + ld_args
 
                 self.spawn(linker + ld_args)
             except DistutilsExecError as msg:
@@ -289,7 +290,7 @@ class UnixCCompiler(CCompiler):
             # vs
             #   /usr/lib/libedit.dylib
             cflags = sysconfig.get_config_var('CFLAGS')
-            m = re.search(r'-isysroot\s+(\S+)', cflags)
+            m = re.search(r'-isysroot\s*(\S+)', cflags)
             if m is None:
                 sysroot = '/'
             else:
