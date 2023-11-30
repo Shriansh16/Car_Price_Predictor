@@ -1,0 +1,11 @@
+[ 2023-11-30 16:00:41,521 ] 22 root - INFO - TAKING RAW DATASET
+[ 2023-11-30 16:00:41,545 ] 24 root - INFO - RAW DATA SET IS READ AS DF
+[ 2023-11-30 16:00:41,552 ] 26 root - INFO - DATASET IS SPLITTED INFO TRAIN AND TEST DATA
+[ 2023-11-30 16:00:41,552 ] 27 root - INFO -      Unnamed: 0   company  year    price  kms_covered fuel_type
+239         239      Mini  2013  1891111        13000    Petrol
+446         446      Tata  2015   123000       100000    Diesel
+334         334   Hyundai  2014   449999        23000    Petrol
+598         598    Maruti  2017   270000        21000    Petrol
+533         533  Mahindra  2018  1299000        40000    Diesel
+[ 2023-11-30 16:00:41,591 ] 28 root - INFO - saving raw,test and train dataset
+[ 2023-11-30 16:00:41,605 ] 32 root - INFO - all dataset saved successfully

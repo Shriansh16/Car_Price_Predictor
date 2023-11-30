@@ -17,20 +17,32 @@ class DataIngestionConfig:
 class DataIngestion:
     def __init__(self):
         self.data_ingestion_config=DataIngestionConfig()
-
     def initiate_data_ingestion(self):
         try:
-            raw=pd.read_csv('D:\Car_Price_Prediction\notebooks\cleaned_data_final.csv')
-            logging.info('dataset is taken')
-            train_data,test_data=train_test_split(raw,test_size=0.20,random_state=42)
-            raw.to_csv(self.data_ingestion_config.raw_data_path,index=False,header=True)
-            logging.info('raw dataset is successfully saved')
-            train_data.to_csv(self.data_ingestion_config.train_data_path,index=False,header=True)
-            logging.info('train dataset is succerssfully saved')
-            test_data.to_csv(self.data_ingestion_config.test_data_path,index=False,header=True)
-            logging.info('test dataset is succerssfully saved')
+            logging.info("TAKING RAW DATASET")
+            raw_data=pd.read_csv('D:\Car_Price_Prediction/notebooks/cleaned_data_final.csv')
+            logging.info("RAW DATA SET IS READ AS DF")
+            train,test=train_test_split(raw_data,test_size=0.20,random_state=42)
+            logging.info("DATASET IS SPLITTED INFO TRAIN AND TEST DATA")
+            raw_data.drop('Unnamed: 0',axis=1,inplace=True)
+            train.drop('Unnamed: 0',axis=1,inplace=True)
+            test.drop('Unnamed: 0',axis=1,inplace=True)
+            logging.info(train.head())
+            logging.info("saving raw,test and train dataset")
+            raw_data.to_csv(self.data_ingestion_config.raw_data_path,index=False,header=True)
+            train.to_csv(self.data_ingestion_config.train_data_path,index=False,header=True)
+            test.to_csv(self.data_ingestion_config.test_data_path,index=False,header=True)
+            logging.info("all dataset saved successfully")
+            return(self.data_ingestion_config.train_data_path,self.data_ingestion_config.test_data_path)
         except Exception as e:
-            logging.info('ERROR OCCURED DURING DATA INGESTION')
+            logging.info("error occured during data ingestion")
             raise CustomException(e,sys)
+        
+if __name__=='__main__':
+    obj=DataIngestion()
+    obj.initiate_data_ingestion()
+
+
+
         
 
