@@ -5,6 +5,7 @@ sys.path.insert(0, 'D:\Car_Price_Prediction\src')
 from logger import logging
 from exception import CustomException
 import pickle
+from sklearn.metrics import r2_score
 
 
 def save_object(path,object):
@@ -21,4 +22,16 @@ def load_object(path,object):
         with open(path,'wb') as file_obj:
             return pickle.load(path)
     except Exception as e:
+        raise CustomException(e,sys)
+def model_evaluation(models,X_train,y_train,X_test,y_test):
+    try:
+        report={}
+        for i in range(len(models)):
+            model=list(models.values())[i]
+            model.fit(X_train,y_test)
+            pred=model.predict(X_test)
+            report[list(model.keys())[i]]=r2_score(y_test,pred)
+        return report
+    except Exception as e:
+        logging.info("error occured during model evaluation")
         raise CustomException(e,sys)
