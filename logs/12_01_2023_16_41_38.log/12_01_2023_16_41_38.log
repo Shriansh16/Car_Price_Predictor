@@ -1,0 +1,5 @@
+[ 2023-12-01 16:41:40,944 ] 22 root - INFO - TAKING RAW DATASET
+[ 2023-12-01 16:41:40,959 ] 24 root - INFO - RAW DATA SET IS READ AS DF
+[ 2023-12-01 16:41:40,959 ] 26 root - INFO - DATASET IS SPLITTED INFO TRAIN AND TEST DATA
+[ 2023-12-01 16:41:40,959 ] 38 root - INFO - error occured during data ingestion
+[ 2023-12-01 16:41:40,959 ] 19 root - INFO - error occured in traning pipeline

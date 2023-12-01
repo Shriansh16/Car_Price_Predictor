@@ -22,6 +22,8 @@ class DataIngestion:
             logging.info("TAKING RAW DATASET")
             raw_data=pd.read_csv('D:\Car_Price_Prediction/notebooks/cleaned_data_final.csv')
             logging.info("RAW DATA SET IS READ AS DF")
+            raw_data=raw_data[~raw_data['company'].isin(['Volvo', 'Jeep'])]
+            raw_data.reset_index(drop=True,inplace=True)
             train,test=train_test_split(raw_data,test_size=0.20,random_state=42)
             logging.info("DATASET IS SPLITTED INFO TRAIN AND TEST DATA")
             raw_data.drop('Unnamed: 0',axis=1,inplace=True)
@@ -38,9 +40,7 @@ class DataIngestion:
             logging.info("error occured during data ingestion")
             raise CustomException(e,sys)
         
-if __name__=='__main__':
-    obj=DataIngestion()
-    obj.initiate_data_ingestion()
+
 
 
 

@@ -1,0 +1,34 @@
+[ 2023-12-01 16:48:45,812 ] 22 root - INFO - TAKING RAW DATASET
+[ 2023-12-01 16:48:45,824 ] 24 root - INFO - RAW DATA SET IS READ AS DF
+[ 2023-12-01 16:48:45,832 ] 28 root - INFO - DATASET IS SPLITTED INFO TRAIN AND TEST DATA
+[ 2023-12-01 16:48:45,835 ] 32 root - INFO -       company  year    price  kms_covered fuel_type
+239      Mini  2013  1891111        13000    Petrol
+445    Maruti  2011   230000           65    Petrol
+333   Hyundai  2017   524999         6821    Petrol
+292  Mahindra  2015   855000        30000    Diesel
+628    Maruti  2016   615000        21000    Diesel
+[ 2023-12-01 16:48:45,845 ] 33 root - INFO - saving raw,test and train dataset
+[ 2023-12-01 16:48:45,858 ] 37 root - INFO - all dataset saved successfully
+[ 2023-12-01 16:48:45,883 ] 42 root - INFO - data transformation started
+[ 2023-12-01 16:48:45,883 ] 25 root - INFO - preparing preprocessor
+[ 2023-12-01 16:48:45,883 ] 29 root - INFO - preprocessor is successfully prepared
+[ 2023-12-01 16:48:45,883 ] 44 root - INFO -     company  year  kms_covered fuel_type
+0      Mini  2013        13000    Petrol
+1    Maruti  2011           65    Petrol
+2   Hyundai  2017         6821    Petrol
+3  Mahindra  2015        30000    Diesel
+4    Maruti  2016        21000    Diesel
+[ 2023-12-01 16:48:45,889 ] 45 root - INFO - ******************************************
+[ 2023-12-01 16:48:45,889 ] 46 root - INFO -      company  year  kms_covered fuel_type
+0     Maruti  2015         9300    Petrol
+1   Mahindra  2009        64000    Diesel
+2       Tata  2016       175430    Diesel
+3   Mahindra  2004       160000    Diesel
+4  Chevrolet  2011        27000    Petrol
+[ 2023-12-01 16:48:45,911 ] 51 root - INFO - preprocessor done
+[ 2023-12-01 16:48:45,914 ] 27 root - INFO - TRAINING STARTED
+[ 2023-12-01 16:48:46,687 ] 32 root - INFO - TRAINING COMPLETED
+[ 2023-12-01 16:48:46,687 ] 33 root - INFO - training report: {'Linear_Regression': 0.5988256463475523, 'Random_Forest_Regressor': 0.6737328460175068, 'Adaboost_regressor': 0.09677398322692399, 'Gradientboosting_Regressor': 0.619713287815282, 'Decision_Tree_Regressor': 0.6523240266488836}
+[ 2023-12-01 16:48:46,687 ] 34 root - INFO - SELECTING BEST MODEL
+[ 2023-12-01 16:48:47,229 ] 39 root - INFO - best model is Random_Forest_Regressor which r2 score 0.6737328460175068
+[ 2023-12-01 16:48:47,229 ] 40 root - INFO - saving the best model

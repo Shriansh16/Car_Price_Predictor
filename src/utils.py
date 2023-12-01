@@ -28,9 +28,9 @@ def model_evaluation(models,X_train,y_train,X_test,y_test):
         report={}
         for i in range(len(models)):
             model=list(models.values())[i]
-            model.fit(X_train,y_test)
+            model.fit(X_train,y_train)
             pred=model.predict(X_test)
-            report[list(model.keys())[i]]=r2_score(y_test,pred)
+            report[list(models.keys())[i]]=r2_score(y_test,pred)
         return report
     except Exception as e:
         logging.info("error occured during model evaluation")

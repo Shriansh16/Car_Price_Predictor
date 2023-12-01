@@ -1,0 +1,16 @@
+[ 2023-12-01 16:27:34,977 ] 22 root - INFO - TAKING RAW DATASET
+[ 2023-12-01 16:27:34,992 ] 24 root - INFO - RAW DATA SET IS READ AS DF
+[ 2023-12-01 16:27:35,008 ] 26 root - INFO - DATASET IS SPLITTED INFO TRAIN AND TEST DATA
+[ 2023-12-01 16:27:35,008 ] 30 root - INFO -       company  year   price  kms_covered fuel_type
+41      Honda  2013  284999        46000    Diesel
+202   Hyundai  2014  365000        20000    Petrol
+729  Mahindra  2009  300000        62000    Diesel
+798   Hyundai  2011  290000        40000    Petrol
+603    Maruti  2010  190000        74000    Diesel
+[ 2023-12-01 16:27:35,008 ] 31 root - INFO - saving raw,test and train dataset
+[ 2023-12-01 16:27:35,023 ] 35 root - INFO - all dataset saved successfully
+[ 2023-12-01 16:27:35,055 ] 42 root - INFO - data transformation started
+[ 2023-12-01 16:27:35,055 ] 25 root - INFO - preparing preprocessor
+[ 2023-12-01 16:27:35,055 ] 29 root - INFO - preprocessor is successfully prepared
+[ 2023-12-01 16:27:35,071 ] 54 root - INFO - error occured in preproceesing step
+[ 2023-12-01 16:27:35,071 ] 19 root - INFO - error occured in traning pipeline

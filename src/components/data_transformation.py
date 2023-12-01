@@ -31,7 +31,7 @@ class DataTransformation:
         except Exception as e:
             logging.info("ERROR OCCURED DURING PREPARATION OF PREPROCESSOR")
             raise CustomException(e,sys)
-    def initiate_data_transformation(self,train_path,test_path)
+    def initiate_data_transformation(self,train_path,test_path):
         try:
             train_df=pd.read_csv(train_path)
             test_df=pd.read_csv(test_path)
@@ -41,6 +41,9 @@ class DataTransformation:
             target_test=test_df['price']
             logging.info('data transformation started')
             pre_obj=self.get_data_transformation()
+            logging.info(input_train_features.head())
+            logging.info('******************************************')
+            logging.info(input_test_features.head())
             input_train_tr=pre_obj.fit_transform(input_train_features)
             input_test_tr=pre_obj.transform(input_test_features)
             input_train_tr=input_train_tr.toarray()
