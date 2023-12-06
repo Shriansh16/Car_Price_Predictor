@@ -1,0 +1,9 @@
+[ 2023-12-06 18:55:44,744 ] 96 werkzeug - WARNING -  * Debugger is active!
+[ 2023-12-06 18:55:44,744 ] 96 werkzeug - INFO -  * Debugger PIN: 111-607-179
+[ 2023-12-06 18:55:57,825 ] 96 werkzeug - INFO - 127.0.0.1 - - [06/Dec/2023 18:55:57] "GET / HTTP/1.1" 200 -
+[ 2023-12-06 18:56:02,711 ] 96 werkzeug - INFO - 127.0.0.1 - - [06/Dec/2023 18:56:02] "GET /predict HTTP/1.1" 200 -
+[ 2023-12-06 18:56:06,394 ] 51 root - INFO - Dataframe Gathered
+[ 2023-12-06 18:56:06,407 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\sklearn\\base.py', reloading
+[ 2023-12-06 18:56:06,833 ] 25 root - INFO - ERROR OCCURRED DURING LOADING THE OBJECT
+[ 2023-12-06 18:56:06,833 ] 24 root - INFO - ERROR OCCURED DURING PREDICTION
+[ 2023-12-06 18:56:06,857 ] 96 werkzeug - INFO - 127.0.0.1 - - [06/Dec/2023 18:56:06] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -

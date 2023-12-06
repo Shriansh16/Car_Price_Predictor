@@ -1,0 +1,14 @@
+[ 2023-12-06 19:15:25,671 ] 96 werkzeug - WARNING -  * Debugger is active!
+[ 2023-12-06 19:15:25,671 ] 96 werkzeug - INFO -  * Debugger PIN: 111-607-179
+[ 2023-12-06 19:15:30,377 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\aiogram\\__init__.py', reloading
+[ 2023-12-06 19:15:30,393 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\aiogram\\bot\\__init__.py', reloading
+[ 2023-12-06 19:15:30,393 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\aiogram\\bot\\bot.py', reloading
+[ 2023-12-06 19:15:30,455 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\aiogram\\bot\\base.py', reloading
+[ 2023-12-06 19:15:30,471 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\aiogram\\utils\\mixins.py', reloading
+[ 2023-12-06 19:15:30,486 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\aiogram\\dispatcher\\__init__.py', reloading
+[ 2023-12-06 19:15:30,492 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\aiogram\\dispatcher\\dispatcher.py', reloading
+[ 2023-12-06 19:15:30,633 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\aiogram\\types\\__init__.py', reloading
+[ 2023-12-06 19:15:30,650 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\aiogram\\utils\\executor.py', reloading
+[ 2023-12-06 19:15:30,667 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\dotenv\\__init__.py', reloading
+[ 2023-12-06 19:15:30,667 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\dotenv\\main.py', reloading
+[ 2023-12-06 19:15:30,700 ] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\aiogram\\types\\base.py', reloading

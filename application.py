@@ -20,19 +20,12 @@ def predict_datapoint():
     
     else:
         data=CustomData(
-            Company=request.form.get('Company'),
-            TypeName = request.form.get('TypeName'),
-            Ram = int(request.form.get('Ram')),
-            Weight = float(request.form.get('Weight')),
-            Touchscreen = int(request.form.get('Touchscreen')),
-            IPS=int(request.form.get('IPS')),
-            ppi = float(request.form.get('ppi')),
-            CPU_BRAND = request.form.get('CPU_BRAND'),
-            HDD= request.form.get('HDD'),
-            SSD = request.form.get('SSD'),
-            GPU_BRAND = request.form.get('GPU_BRAND'),
-            OS = request.form.get('OS')
-        )
+            company=request.form.get('company'),
+            year = request.form.get('year'),
+            kms_covered = int(request.form.get('kms_covered')),
+            fuel_type = request.form.get('fuel_type'))
+            
+        
         final_new_data=data.get_data_as_dataframe()
         predict_pipeline=Predict_Pipeline()
         pred=predict_pipeline.predict(final_new_data)

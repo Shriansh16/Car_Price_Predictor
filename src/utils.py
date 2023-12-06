@@ -17,12 +17,13 @@ def save_object(path,object):
     except Exception as e:
         raise CustomException(e,sys)
     
-def load_object(path,object):
+def load_object(path):
     try:
-        with open(path,'wb') as file_obj:
-            return pickle.load(path)
+        with open(path, 'rb') as file_obj:
+            return pickle.load(file_obj)
     except Exception as e:
-        raise CustomException(e,sys)
+        logging.info('ERROR OCCURRED DURING LOADING THE OBJECT')
+        raise CustomException(e, sys)
 def model_evaluation(models,X_train,y_train,X_test,y_test):
     try:
         report={}
